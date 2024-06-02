@@ -1,0 +1,1 @@
+{"index": 3, "timestamp": 1717323483.503495, "transactions": [{"sender": "system", "recipient": "drug_regulation", "data": {"action": "add_regulation", "drug_id": "drug_1", "regulation_data": "regulation_for_drug"}}], "proof": 101, "previous_hash": "3a7f4716fdfceb0c9b0c95baa099917bad291ded678817ae27b7262961c98c5d"}
