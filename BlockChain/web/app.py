@@ -16,14 +16,12 @@ from blockchain.smart_contracts import *
 
 app = Flask(__name__)
 
-# 智能合约实例化
 identity_management = IdentityManagementContract()
 data_encryption = DataEncryptionContract()
 clinical_trial = ClinicalTrialContract()
 drug_regulation = DrugRegulationContract()
 intellectual_property = IntellectualPropertyContract()
 
-# RSA 密钥对生成
 private_key = rsa.generate_private_key(
     public_exponent=65537,
     key_size=2048,
@@ -31,7 +29,6 @@ private_key = rsa.generate_private_key(
 
 public_key = private_key.public_key()
 
-# 身份管理合约端点
 @app.route('/roles/add', methods=['POST'])
 def add_role():
     values = request.get_json()
